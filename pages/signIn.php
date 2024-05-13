@@ -111,16 +111,7 @@
           ></span>
           <h3 class="text-2xl font-bold text-[#10305C]">Intern</h3>
         </div>
-        <div
-          class="flex flex-col gap-2 justify-center items-center bg-[#F0E1E1] p-6 rounded-md cursor-pointer hover:bg-gray-300"
-          onclick="type2(event)"
-          id="establishement"
-        >
-          <span class="text-9xl text-[#10305C]"
-            ><i class="fa-solid fa-school"></i
-          ></span>
-          <h3 class="text-2xl font-bold text-[#10305C]">Establishement</h3>
-        </div>
+        
         <div
           class="flex w-[20%] flex-col gap-2 justify-center items-center bg-[#F0E1E1] p-6 rounded-md cursor-pointer hover:bg-gray-300"
           onclick="type2(event)"
