@@ -14,75 +14,76 @@
     <title>Sign In</title>
   </head>
   <body class="h-screen w-screen flex gap-0">
-    <aside class="w-[20%] bg-[#10305C] h-[100%]">
+    <aside class="w-[20%] bg-[#10305C] h-[100%] flex flex-col justify-around">
       <div class="w-[60%] h-[20%] flex justify-center items-center">
-        <a class="w-[50%]" href="./../index.html"><img
-          src="./../assests/maya-high-resolution-logo-white-transparent.png"
-          alt="LOGO"
+        <a class="w-[80%]" href="./../index.html"
+          ><img
+            src="./../assests/maya-high-resolution-logo-white-transparent.png"
+            alt="LOGO"
         /></a>
       </div>
       <div
-        class="w-[60%] h-[60%] flex flex-col justify-center items-center gap-0"
+        class="w-[100%] h-[70%] flex flex-col justify-start items-center gap-0"
       >
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span
             class="w-[30px] h-[30px] bg-white inline-block rounded-full"
           ></span>
-          <span class="font-bold text-white text-2xl">Step 1</span>
+          <span class="font-bold text-white text-2xl">Types</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span class="w-[30px] h-[30px] inline-block flex justify-center">
             <span class="inline-block h-[100%] w-0 border"></span>
           </span>
           <span class="font-bold text-transparent text-2xl">Step 1</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span class="w-[30px] h-[30px] inline-block flex justify-center">
             <span class="inline-block h-[100%] w-0 border"></span>
           </span>
           <span class="font-bold text-transparent text-2xl">Step 1</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span
             class="w-[30px] h-[30px] border border-2 inline-block rounded-full"
           ></span>
-          <span class="font-bold text-white text-2xl">Step 2</span>
+          <span class="font-bold text-white text-2xl">Personal Info</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span class="w-[30px] h-[30px] inline-block flex justify-center">
             <span class="inline-block h-[100%] w-0 border"></span>
           </span>
           <span class="font-bold text-transparent text-2xl">Step 1</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span class="w-[30px] h-[30px] inline-block flex justify-center">
             <span class="inline-block h-[100%] w-0 border"></span>
           </span>
           <span class="font-bold text-transparent text-2xl">Step 1</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span
             class="w-[30px] h-[30px] border border-2 inline-block rounded-full"
           ></span>
-          <span class="font-bold text-white text-2xl">Step 3</span>
+          <span class="font-bold text-white text-2xl">Academic & Qualifications</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span class="w-[30px] h-[30px] inline-block flex justify-center">
             <span class="inline-block h-[100%] w-0 border"></span>
           </span>
           <span class="font-bold text-transparent text-2xl">Step 1</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span class="w-[30px] h-[30px] inline-block flex justify-center">
             <span class="inline-block h-[100%] w-0 border"></span>
           </span>
           <span class="font-bold text-transparent text-2xl">Step 1</span>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-[90%]">
           <span
             class="w-[30px] h-[30px] border border-2 inline-block rounded-full"
           ></span>
-          <span class="font-bold text-white text-2xl">Step 4</span>
+          <span class="font-bold text-white text-2xl">Skills & Interest</span>
         </div>
       </div>
     </aside>
@@ -90,12 +91,13 @@
       <h1 class="text-5xl font-extrabold text-[#10305C]">
         Choose Your User Type
       </h1>
-      <p class="text-2xl text-[#10305C]">
-        Please choose your user user type below before procceedding
+      <p class="text-2xl text-[#10305C]" id="textChoose">
+        Please choose your user type below before procceedding
       </p>
       <div class="flex gap-3 w-[70%] justify-center">
         <div
           class="flex w-[20%] flex-col gap-2 justify-center items-center bg-[#F0E1E1] p-6 rounded-md cursor-pointer hover:bg-gray-300"
+          id="intern"
         >
           <span class="text-9xl text-[#10305C]"
             ><i class="fa-solid fa-graduation-cap"></i
@@ -103,22 +105,61 @@
           <h3 class="text-2xl font-bold text-[#10305C]">Intern</h3>
         </div>
         <div
-          class="flex flex-col gap-2 justify-center items-center bg-[#F0E1E1] p-6 rounded-md cursor-pointer hover:bg-gray-300" onclick="type2()"
+          class="flex flex-col gap-2 justify-center items-center bg-[#F0E1E1] p-6 rounded-md cursor-pointer hover:bg-gray-300"
+          onclick="type2(event)"
+          id="establishement"
         >
-          <span class="text-9xl text-[#10305C]"><i class="fa-solid fa-school"></i></span>
+          <span class="text-9xl text-[#10305C]"
+            ><i class="fa-solid fa-school"></i
+          ></span>
           <h3 class="text-2xl font-bold text-[#10305C]">Establishement</h3>
         </div>
         <div
           class="flex w-[20%] flex-col gap-2 justify-center items-center bg-[#F0E1E1] p-6 rounded-md cursor-pointer hover:bg-gray-300"
+          onclick="type2(event)"
+          id="company"
         >
-          <span class="text-9xl text-[#10305C]"><i class="fa-solid fa-building"></i></span>
+          <span class="text-9xl text-[#10305C]"
+            ><i class="fa-solid fa-building"></i
+          ></span>
           <h3 class="text-2xl font-bold text-[#10305C]">Company</h3>
         </div>
       </div>
     </main>
 
     <script>
-      
+      function id(id) {
+        return document.getElementById(id);
+      }
+      // advancing in type if Establishement or Company :
+      function type2(event) {
+        const targetDiv = event.currentTarget;
+        const type = targetDiv.children[1].textContent.toLowerCase();
+        const companyDiv = id("company");
+        const internDiv = id("intern");
+
+        // change the title to sub type :
+        id("textChoose").textContent =
+          "Please choose your Sub-type below before procceedding";
+        if (type == "establishement") {
+          targetDiv.remove();
+          internDiv.children[1].textContent = "Administration";
+          internDiv.children[0].innerHTML =
+            '<i class="fa-solid fa-user-tie"></i>';
+          companyDiv.children[1].textContent = "Mentor";
+          companyDiv.children[0].innerHTML =
+            '<i class="fa-solid fa-laptop"></i>';
+        } else {
+          id("establishement").remove();
+          internDiv.children[1].textContent = "Administration";
+          internDiv.children[0].innerHTML =
+            '<i class="fa-solid fa-user-tie"></i>';
+          companyDiv.children[1].textContent = "Mentor";
+          companyDiv.children[0].innerHTML =
+            '<i class="fa-solid fa-laptop"></i>';
+        }
+        companyDiv.removeAttribute("onclick", "type2(event)");
+      }
     </script>
   </body>
 </html>
