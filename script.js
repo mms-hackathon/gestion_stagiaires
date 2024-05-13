@@ -7,7 +7,6 @@ let faq_system = document.getElementById("faq_system")
 let faq_learn = document.getElementById("faq_learn")
 let faq_linux = document.getElementById("faq_linux")
 
-console.log(faq_learn)
 faq_system.addEventListener("click",()=>{
     getE("text_system").classList.toggle("hidden")
     faq_system.querySelector("#faq_system > i").classList.toggle("fa-angle-down")
