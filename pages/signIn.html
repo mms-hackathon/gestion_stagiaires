@@ -27,67 +27,72 @@
       >
         <div class="flex items-center gap-3 w-[90%]">
           <span
-            class="w-[30px] h-[30px] bg-white inline-block rounded-full"
+            class="w-[30px] h-[30px] bg-white inline-block rounded-full switchSignIn"
           ></span>
           <span class="font-bold text-white text-2xl">Types</span>
         </div>
         <div class="flex items-center gap-3 w-[90%]">
-          <span class="w-[30px] h-[30px] inline-block flex justify-center">
-            <span class="inline-block h-[100%] w-0 border"></span>
+          <span class="w-[30px] h-[30px] flex justify-center">
+            <span class="inline-block h-[100%] w-0 border-2"></span>
           </span>
-          <span class="font-bold text-transparent text-2xl">Step 1</span>
+          <span class="font-bold text-transparent text-2xl">------</span>
         </div>
         <div class="flex items-center gap-3 w-[90%]">
-          <span class="w-[30px] h-[30px] inline-block flex justify-center">
-            <span class="inline-block h-[100%] w-0 border"></span>
+          <span class="w-[30px] h-[30px] flex justify-center">
+            <span class="inline-block h-[100%] w-0 border-2"></span>
           </span>
-          <span class="font-bold text-transparent text-2xl">Step 1</span>
+          <span class="font-bold text-transparent text-2xl">------</span>
         </div>
         <div class="flex items-center gap-3 w-[90%]">
           <span
-            class="w-[30px] h-[30px] border border-2 inline-block rounded-full"
+            class="w-[30px] h-[30px] border-2 inline-block rounded-full switchSignIn"
           ></span>
           <span class="font-bold text-white text-2xl">Personal Info</span>
         </div>
         <div class="flex items-center gap-3 w-[90%]">
-          <span class="w-[30px] h-[30px] inline-block flex justify-center">
-            <span class="inline-block h-[100%] w-0 border"></span>
+          <span class="w-[30px] h-[30px] flex justify-center">
+            <span class="inline-block h-[100%] w-0 border-2"></span>
           </span>
-          <span class="font-bold text-transparent text-2xl">Step 1</span>
+          <span class="font-bold text-transparent text-2xl">------</span>
         </div>
         <div class="flex items-center gap-3 w-[90%]">
-          <span class="w-[30px] h-[30px] inline-block flex justify-center">
-            <span class="inline-block h-[100%] w-0 border"></span>
+          <span class="w-[30px] h-[30px] flex justify-center">
+            <span class="inline-block h-[100%] w-0 border-2"></span>
           </span>
-          <span class="font-bold text-transparent text-2xl">Step 1</span>
+          <span class="font-bold text-transparent text-2xl">------</span>
         </div>
         <div class="flex items-center gap-3 w-[90%]">
           <span
-            class="w-[30px] h-[30px] border border-2 inline-block rounded-full"
+            class="w-[30px] h-[30px] border-2 inline-block rounded-full switchSignIn"
           ></span>
-          <span class="font-bold text-white text-2xl">Academic & Qualifications</span>
+          <span class="font-bold text-white text-2xl"
+            >Academic & Qualifications</span
+          >
         </div>
         <div class="flex items-center gap-3 w-[90%]">
-          <span class="w-[30px] h-[30px] inline-block flex justify-center">
-            <span class="inline-block h-[100%] w-0 border"></span>
+          <span class="w-[30px] h-[30px] flex justify-center">
+            <span class="inline-block h-[100%] w-0 border-2"></span>
           </span>
-          <span class="font-bold text-transparent text-2xl">Step 1</span>
+          <span class="font-bold text-transparent text-2xl">------</span>
         </div>
         <div class="flex items-center gap-3 w-[90%]">
-          <span class="w-[30px] h-[30px] inline-block flex justify-center">
-            <span class="inline-block h-[100%] w-0 border"></span>
+          <span class="w-[30px] h-[30px] flex justify-center">
+            <span class="inline-block h-[100%] w-0 border-2"></span>
           </span>
-          <span class="font-bold text-transparent text-2xl">Step 1</span>
+          <span class="font-bold text-transparent text-2xl">------</span>
         </div>
         <div class="flex items-center gap-3 w-[90%]">
           <span
-            class="w-[30px] h-[30px] border border-2 inline-block rounded-full"
+            class="w-[30px] h-[30px] border-2 inline-block rounded-full switchSignIn"
           ></span>
           <span class="font-bold text-white text-2xl">Skills & Interest</span>
         </div>
       </div>
     </aside>
-    <main class="w-[80%] flex flex-col gap-5 justify-center items-center">
+    <main
+      class="w-[80%] flex flex-col gap-5 justify-center items-center hidden"
+    >
+      <!--remove Hidden from here-->
       <h1 class="text-5xl font-extrabold text-[#10305C]">
         Choose Your User Type
       </h1>
@@ -126,7 +131,215 @@
         </div>
       </div>
     </main>
-
+    <form
+      action=""
+      method=""
+      class="w-[80%] flex flex-col gap-5 justify-center items-center hidden"
+    >
+      <h1 class="text-5xl font-bold text-[#10305C]">Personal Info</h1>
+      <input
+        class="outline-none border-b-2 w-[50%] h-[50px] ps-3 bg-gray-100"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Full-Name"
+      />
+      <input
+        class="outline-none border-b-2 w-[50%] h-[50px] ps-3 bg-gray-100"
+        type="text"
+        name="email"
+        id="email"
+        placeholder="E-mail"
+      />
+      <input
+        class="outline-none border-b-2 w-[50%] h-[50px] ps-3 bg-gray-100"
+        type="number"
+        name="age"
+        id="age"
+        max="80"
+        min="16"
+        placeholder="Age"
+      />
+      <select
+        name="gender"
+        id="gender"
+        class="outline-none border-b-2 w-[50%] h-[50px] px-6 bg-gray-100"
+      >
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input
+        class="outline-none border-b-2 w-[50%] h-[50px] ps-3 bg-gray-100"
+        type="text"
+        name="adress"
+        id="adress"
+        placeholder="Adress"
+      />
+      <input
+        class="outline-none border-b-2 w-[50%] h-[50px] ps-3 bg-gray-100"
+        type="text"
+        name="tel"
+        id="tel"
+        placeholder="Phone-Number"
+      />
+      <input
+        class="outline-none border-b-2 w-[50%] h-[50px] ps-3 bg-gray-100"
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+      <input
+        type="submit"
+        value="Submit"
+        class="bg-[#22C7C5] hover:border-2 hover:border-blue-400 text-white font-bold text-2xl py-3 px-16 rounded-xl cursor-pointer hover:bg-gray-200 hover:text-[#22C7C5]"
+      />
+    </form>
+    <form
+      action=""
+      method=""
+      class="w-[80%] flex flex-col gap-5 justify-center items-center hidden"
+    >
+      <h1 class="text-5xl font-bold text-[#10305C]">
+        Academic & Qualifications
+      </h1>
+      <select
+        id="branche"
+        class="bg-gray-50 w-[50%] border border-gray-300 text-gray-900 font-bold text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 outline-none"
+      >
+        <option value="">Select branche</option>
+        <option value="dd">Digital Development</option>
+        <option value="id">Infrastructure Digital</option>
+      </select>
+      <select
+        id="year"
+        class="bg-gray-50 w-[50%] border border-gray-300 text-gray-900 font-bold text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 outline-none"
+      >
+        <option value="">Year</option>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+      </select>
+      <input
+        type="text"
+        name="portfolio"
+        id="portfolio"
+        placeholder="Portfolio WebSite"
+        class="bg-gray-50 w-[50%] border border-gray-300 text-gray-900 font-bold text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 outline-none"
+      />
+      <h3 class="text-gray-600 text-2xl font-bold w-[50%] text-start">
+        Spoken Languages :
+      </h3>
+      <div class="w-[50%]">
+        <div class="relative mb-6 w-[50%]">
+          <label for="labels-range-input" class="">Arabic</label>
+          <input
+            id="labels-range-input"
+            type="range"
+            value="100"
+            min="0"
+            max="100"
+            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+          />
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-0 -bottom-6"
+            >Min (00%)</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-1/3 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6"
+            >30%</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-2/3 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6"
+            >70%</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute end-0 -bottom-6"
+            >Max (100%)</span
+          >
+        </div>
+      </div>
+      <div class="w-[50%]">
+        <div class="relative mb-6 w-[50%]">
+          <label for="english" class="">English</label>
+          <input
+            id="labels-range-input"
+            type="range"
+            value="50"
+            min="0"
+            max="100"
+            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+          />
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-0 -bottom-6"
+            >Min (00%)</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-1/3 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6"
+            >30%</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-2/3 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6"
+            >70%</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute end-0 -bottom-6"
+            >Max (100%)</span
+          >
+        </div>
+      </div>
+      <div class="w-[50%]">
+        <div class="relative mb-6 w-[50%]">
+          <label for="frensh" class="">Frensh</label>
+          <input
+            id="labels-range-input"
+            type="range"
+            value="0"
+            min="0"
+            max="100"
+            class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+          />
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-0 -bottom-6"
+            >Min (00%)</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-1/3 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6"
+            >30%</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute start-2/3 -translate-x-1/2 rtl:translate-x-1/2 -bottom-6"
+            >70%</span
+          >
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 absolute end-0 -bottom-6"
+            >Max (100%)</span
+          >
+        </div>
+      </div>
+      <div class="w-[50%] flex justify-end">
+        <input
+          type="submit"
+          value="Submit"
+          class="bg-[#22C7C5] hover:border-2 hover:border-blue-400 text-white font-bold text-2xl py-3 px-16 rounded-xl cursor-pointer hover:bg-gray-200 hover:text-[#22C7C5]"
+        />
+      </div>
+    </form>
+    <form
+      action=""
+      method=""
+      class="w-[80%] flex flex-col gap-5 justify-center items-center"
+    >
+      <h1 class="text-5xl font-bold text-[#10305C] w-[50%]">Skills</h1>
+      <div class="bg-gray-100 w-[50%] h-[15rem] rounded-md"></div>
+      <h1 class="text-5xl font-bold text-[#10305C] w-[50%]">Interest</h1>
+      <div class="bg-gray-100 w-[50%] h-[15rem] rounded-md"></div>
+      <input
+        type="submit"
+        value="Submit"
+        class="bg-[#22C7C5] hover:border-2 hover:border-blue-400 text-white font-bold text-2xl py-3 px-16 rounded-xl cursor-pointer hover:bg-gray-200 hover:text-[#22C7C5]"
+      />
+    </form>
     <script>
       function id(id) {
         return document.getElementById(id);
@@ -137,10 +350,10 @@
         const type = targetDiv.children[1].textContent.toLowerCase();
         const companyDiv = id("company");
         const internDiv = id("intern");
+        const noticeParagraph = id("textChoose");
 
-        // change the title to sub type :
-        id("textChoose").textContent =
-          "Please choose your Sub-type below before procceedding";
+        // add trasition with !!!!
+
         if (type == "establishement") {
           targetDiv.remove();
           internDiv.children[1].textContent = "Administration";
