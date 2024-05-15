@@ -9,14 +9,15 @@
 <body class="m-0 p-0 h-[100vh] text-[#263d68] font-body">
   <!-- header -->
   <header class="flex justify-between mt-3">
-    <p class="ml-3 font-serif text-xl">Maya</p>
+    <a class="ml-3 font-serif text-xl" href="#">Maya</a>
     <div class="flex justify-evenly w-[40%]">
-      <p class="font-semibold text-[#263d68]">FAQs</p>
-      <p class="font-semibold text-[#263d68]">Features</p>
+      <a class="font-semibold text-[#263d68]" href="#faqs">FAQs</a>
+      <a class="font-semibold text-[#263d68]" href="#feautures">Features</a>
       <p class="font-semibold text-[#263d68]">About</p>
-      <p class="font-semibold text-[#263d68]">Contact</p>
-      <input type="button" value="Sign Up" class="border-[#47c6c6] border-[1.5px] rounded-lg font-semibold text-sm text-center  text-[#47c6c6] w-20"/>
-      <input type="button" value="Login" class="bg-[#47c6c6] text-white w-20 rounded-lg text-sm text-center font-semibold "/>
+      <a class="font-semibold text-[#263d68]" href="#contact">Contact</a>
+      <a class="border-[#47c6c6] border-[1.5px] rounded-lg font-semibold text-m p-1 text-center  text-[#47c6c6] w-20">Sign Up</a>
+      <a href="pages/loginPage.html" class="bg-[#47c6c6] text-white w-20 rounded-lg text-m p-1 text-center font-semibold ">Login</a>
+      
     </div>
   </header>
   <!-- main : container for all page content -->
@@ -45,7 +46,7 @@
       </div>
     </article>
     <!-- article 2 : types of users -->
-    <article class="flex justify-evenly mt-9 ">
+    <article class="flex justify-evenly mt-9 " id="feautures">
       <div class="w-[250px] h-[150px] flex flex-col gap-4 justify-center text-left">
         <h3 class="font-bold text-sm"><i class="fa-solid fa-circle-half-stroke fa-2xl m-3 mb-3"></i>Different types of users</h3>
         <p class="text-sm">All base UI elements are made using Nested Symbols and shared styles that are logically connected with one another</p>
@@ -112,7 +113,7 @@
       </div>
     </article>
     <!-- article 4 : FaQs -->
-    <article>
+    <article id="faqs">
       <section class="m-10 flex flex-col items-center">
         <p class="font-extrabold text-2xl">FAQs</p>
         <div class="mt-10 w-[45%] gap-5">
@@ -138,7 +139,7 @@
     </article>
     <!-- article 5 : contact -->
     <article>
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center" id="contact">
         <p class="font-bold p-2 text-m text-left w-[350px] text-[#263d68]">Contact</p>
         <input type="email" placeholder="Email" class="border m-2 p-3 w-[350px] h-12 bg-[#d1dffabb]" />
         <input type="text" placeholder="type Here ..."  class="border m-2 p-3 w-[350px] h-12 bg-[#d1dffabb]"" />
@@ -153,11 +154,11 @@
     </article>
   </main>
   <footer class="flex justify-evenly p-10">
-    <p class="ml-3 font-serif text-xl text-[#263d68]">Maya</p>
-    <p class="text-[#263d68]">Features</p>
-    <p class="text-[#263d68]">FAQs</p>
+    <a class="ml-3 font-serif text-xl text-[#263d68]" href="#">Maya</a>
+    <a class="text-[#263d68]" href="#feautures">Features</a>
+    <a class="text-[#263d68]" href="#faqs">FAQs</a>
     <p class="text-[#263d68]">About</p>
-    <p class="text-[#263d68]">Contact</p>
+    <a class="text-[#263d68]" href="#contact">Contact</a>
   </footer>
   <script src="script.js"></script>
 </body>
